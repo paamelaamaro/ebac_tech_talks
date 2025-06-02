@@ -9,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
      <header class="hero">
         <div class="container">
             <img  class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <P class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 30d 17h 20min 56s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </P>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -29,7 +30,7 @@
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Quando</b>
-                        12/12/2022 as 19hrs
+                        11/06/2025 as 19hrs
                     </li>
                 </ul>
                 <a href="" class="button button--primary">
@@ -38,9 +39,55 @@
             </div>
         </div>
      </header>
+
+     <section class="event event--frontend" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Front-end</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis officiis ex placeat veniam! Tempore similique rem consectetur, illo autem error maxime praesentium eos vitae soluta ipsa consequuntur obcaecati explicabo facere.
+                </p>
+            </div>
+            <img class="event__image"  src="./images/frontend.png" alt="Front-end">
+        </div>
+     </section>
+          <section class="event event--ux-ui event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">UX/UI</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis officiis ex placeat veniam! Tempore similique rem consectetur, illo autem error maxime praesentium eos vitae soluta ipsa consequuntur obcaecati explicabo facere.
+                </p>
+            </div>
+            <img class="event__image"  src="./images/frontend.png" alt="Front-end">
+        </div>
+     </section>
+     <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Data Science</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis officiis ex placeat veniam! Tempore similique rem consectetur, illo autem error maxime praesentium eos vitae soluta ipsa consequuntur obcaecati explicabo facere.
+                </p>
+            </div>
+            <img class="event__image"  src="./images/frontend.png" alt="Front-end">
+        </div>
+     </section>
+          <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Back-end</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis officiis ex placeat veniam! Tempore similique rem consectetur, illo autem error maxime praesentium eos vitae soluta ipsa consequuntur obcaecati explicabo facere.
+                </p>
+            </div>
+            <img class="event__image"  src="./images/frontend.png" alt="Front-end">
+        </div>
+     </section>
+    
     
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
